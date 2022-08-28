@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Find the Order Breaker", "Find the Order Breaker\Find the Order Breaker.csproj", "{24BA9D17-F75D-40EC-A01B-282CFA6117EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{233156D6-8551-4D96-8FEE-D48C14EBC79E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24BA9D17-F75D-40EC-A01B-282CFA6117EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24BA9D17-F75D-40EC-A01B-282CFA6117EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24BA9D17-F75D-40EC-A01B-282CFA6117EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24BA9D17-F75D-40EC-A01B-282CFA6117EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{233156D6-8551-4D96-8FEE-D48C14EBC79E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{233156D6-8551-4D96-8FEE-D48C14EBC79E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{233156D6-8551-4D96-8FEE-D48C14EBC79E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{233156D6-8551-4D96-8FEE-D48C14EBC79E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {110939A1-536D-4439-A37B-D0C6B8BE0D5C}
+	EndGlobalSection
+EndGlobal
