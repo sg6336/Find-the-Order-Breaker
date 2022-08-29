@@ -27,9 +27,19 @@ public class OrderBreakerTestExample
     [Test]
     public void test1()
     {
-        foreach (var test in tests)
-        {
-            Assert.AreEqual(test.Item2, Kata.OrderBreaker(test.Item1.ToArray()));
-        }
+        Assert.AreEqual(tests[0].Item2, Kata.OrderBreaker(tests[0].Item1.ToArray()));
+        Assert.AreEqual(tests[1].Item2, Kata.OrderBreaker(tests[1].Item1.ToArray()));
+        Assert.AreEqual(tests[2].Item2, Kata.OrderBreaker(tests[2].Item1.ToArray()));
+        Assert.AreEqual(tests[3].Item2, Kata.OrderBreaker(tests[3].Item1.ToArray()));
+        Assert.AreEqual(tests[4].Item2, Kata.OrderBreaker(tests[4].Item1.ToArray()));
+        Assert.AreEqual(tests[5].Item2, Kata.OrderBreaker(tests[5].Item1.ToArray()));
+        Assert.AreEqual(tests[6].Item2, Kata.OrderBreaker(tests[6].Item1.ToArray()));
+        Assert.AreEqual(tests[7].Item2, Kata.OrderBreaker(tests[7].Item1.ToArray()));
+        Assert.AreEqual(tests[8].Item2, Kata.OrderBreaker(tests[8].Item1.ToArray()));
+        Assert.AreEqual(tests[9].Item2, Kata.OrderBreaker(tests[9].Item1.ToArray()));
+        //foreach (var test in tests)
+        //{
+        //    Assert.AreEqual(test.Item2, Kata.OrderBreaker(test.Item1.ToArray()));
+        //}
     }
 }
