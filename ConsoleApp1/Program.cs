@@ -11,32 +11,63 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             //Kata.OrderBreaker(new int[] { 2, 1 });
-            Kata.OrderBreaker(new int[] { 1, 3, 2 });
+            //Kata.OrderBreaker(new int[] { 1, 3, 2 });
             //Kata.OrderBreaker(new int[] { 1, 2, 0, 3, 4 });
+            //Kata.OrderBreaker(new int[] { 105, 110, 111, 112, 114, 113, 115 });
             //Kata.OrderBreaker(new int[] { 1001, 991, 992, 993, 994, 995, 996 });
+            Kata.OrderBreaker(new int[] { 1, 2, 3, 4, -1 });
         }
     }
 
     public class Kata
     {
-        public static int OrderBreaker(int[] input) // 1, 2, 0, 3, 4
-        {                                           // 0, 1, 2, 3, 4
-                                                    // 1, 3, 2, 4, 5
-                                                    // 1, 2, 3, 4, 5
-            int[] ints = new int[input.Length];
-            Array.Copy(input, ints, input.Length);
-            Array.Sort(ints);
-            for (int i = 0; i < input.Length-1; i++)
+        public static int OrderBreaker(int[] input)
+        {
+            if (input.Length >= 2)
             {
-                if (input[i] != ints[i])
+                for (int i = 0; i < input.Length; i++)
                 {
-                    if (input[i] != ints[i+1])
+                    if (i == 0)
+                    {
+                        if (input[0] > input[1])
+                        {
+                            return input[0];
+                        }
+                        continue;
+                    }
+                    if (i == input.Length - 1)
+                    {
+                        int len = input.Length;
+                        if (input[len - 2] > input[len - 1])
+                        {
+                            if (input[len - 1] > input[len - 3])
+                            {
+                                return input[input.Length - 2];
+                            }
+                            else
+                            {
+                                return input[input.Length - 1];
+                            }
+                        }
+                        break;
+                    }
+
+                    if (input[i] < input[i - 1] && input[i] < input[i + 1])
                     {
                         return input[i];
                     }
+                    if (input[i] > input[i - 1] && input[i] > input[i + 1])
+                    {
+                        if (input[i + 1] > input[i - 1])
+                        {
+                            return input[i];
+                        }
+                    }
                 }
             }
+
             return 0;
         }
     }
 }
+
